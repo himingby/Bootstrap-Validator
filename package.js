@@ -1,13 +1,9 @@
 Package.describe({
-  name: 'rgoomar:bootstrap-validator',
-  summary: 'bootstrapValidator to validate forms and use bootstrap 3 to show errors',
-  version: '0.5.1',
-  git: 'https://github.com/rgoomar/Bootstrap-Validator'
+  summary: 'bootstrapValidator to validate forms and use bootstrap 3 to show errors'
 });
 
-Package.onUse(function(api) {
-    api.versionsFrom("METEOR@0.9.0");
+Package.on_use(function(api) {
     api.use('jquery', 'client');
-    api.addFiles('lib/js/bootstrapValidator.js', 'client');
-    api.addFiles('lib/css/bootstrapValidator.css', 'client');
+    api.add_files('lib/js/bootstrapValidator.js', 'client');
+    api.add_files('lib/css/bootstrapValidator.css', 'client');
 });
